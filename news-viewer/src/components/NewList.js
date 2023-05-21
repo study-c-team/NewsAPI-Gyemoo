@@ -28,7 +28,7 @@ const NewsList = () => {
             // try catch문 에러 처리
             try {
                 const response = await axios.get(
-                    'https://newsapi.org/v2/top-headlines?country=kr&apiKey=1bbc9c59b7e04426b7c8dc91d8eb098f',
+                    'https://newsapi.org/v2/top-headlines?country=us&apiKey=1bbc9c59b7e04426b7c8dc91d8eb098f',
                 );
                 // API 데이터 state 저장
                 setArticles(response.data.articles)
